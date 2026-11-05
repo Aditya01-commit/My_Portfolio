@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Chauhan | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="head">
+        <h1 class="logo">PORTFOLIO</h1>
+        <nav class="nav">
+            <a href="#hero">Hero</a>
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section id="hero">
+            <div class="hero-text">
+                <h2>Hi, I'm Aditya Chauhan</h2>
+                <h3 class="role">Full Stack Developer</h3>
+                <p>Greetings to all. This is my portfolio, made using HTML and CSS. It is a brief overview of me, my qualities, skills and projects.</p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            <img class="hero-img" src="profile image.jpg" alt="Profile image">
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About</h2>
+            <p>I am a <b>B.Tech CSE (AI and ML)</b> first year student currently studying at <b>KR Mangalam University, Gurugram</b>. I passed my class 12th from <b>KIIT World School, Gurugram</b>. In school, I worked on a project named <b>Restaurant Management System</b> using Python.</p>
+            <p>I enjoy building things with code and I am always learning something new, from web development to AI.</p>
+        </section>
+
+        <!-- Projects (grid of cards) -->
+        <section id="project">
+            <h2>Projects</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Restaurant Management System</h3>
+                    <p>A project I made in class 12th, fully based on Python using libraries like pandas and matplotlib. A person can store the <b>MENU</b> of the restaurant (starters, main course and sweet dishes with prices), and modify, update or delete the data, which is stored in an Excel file. It also bills the amount and stores the data in a CSV file. At the end, the customer can rate the service from 1-5 stars, which is stored in another CSV file.</p>
+                    <a href="resturant management system.py">Project file</a>
+                </article>
+
+                <article class="card">
+                    <h3>Creator</h3>
+                    <p>A Python based AI assistant made using various Python libraries. It can perform tasks like searching on Google. I made it after taking inspiration from the smart AI Jarvis. It understands Hindi and English and can execute commands by writing or speech. It is a prototype I am still working on.</p>
+                    <a href="CREATOR_Final.pdf">Creator file</a>
+                </article>
+
+                <article class="card">
+                    <h3>Portfolio Website</h3>
+                    <p>This responsive one-page website, built using HTML and CSS. It uses Flexbox, Grid, media queries and animations, and works on mobile, tablet and desktop screens.</p>
+                    <a href="https://github.com/Aditya01-commit">View on GitHub</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills (table) -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="table-wrap">
+                <table class="skills-table">
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Level</th>
+                            <th>Used For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Beginner</td>
+                            <td>Page structure of websites</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Beginner</td>
+                            <td>Styling, Flexbox, Grid, animations</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>Moderate</td>
+                            <td>Restaurant Management System, Creator</td>
+                        </tr>
+                        <tr>
+                            <td>Git &amp; GitHub</td>
+                            <td>Beginner</td>
+                            <td>Saving and sharing my code</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="feedback">Message</label>
+                <textarea id="feedback" placeholder="Enter your message"></textarea>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="foot">
+        <p>&copy; 2026 Aditya Chauhan</p>
+        <div class="foot-links">
+            <a href="#hero">Top</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/Aditya01-commit">GitHub</a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,321 @@
+/* ---------- Basic setup ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #222222;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Colour theme: dark blue, orange, light grey */
+
+section {
+  padding: 3rem 5%;
+  animation: fadeIn 1.2s ease;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ---------- Header (Flexbox) ---------- */
+.head {
+  background-color: #1f2a44;
+  color: white;
+  padding: 1rem 5%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  /* mobile first: logo above the links */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav a:hover {
+  color: #ff7a18;
+  transform: translateY(-3px);
+}
+
+/* ---------- Hero (Flexbox) ---------- */
+#hero {
+  display: flex;
+  flex-direction: column;      /* mobile: text on top, image below */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 80vh;
+  text-align: center;
+}
+
+#hero h2 {
+  text-align: inherit;
+  font-size: 2rem;
+}
+
+/* colour changing text */
+.role {
+  font-size: 1.5rem;
+  animation: colorChange 2s infinite alternate;
+}
+
+.hero-img {
+  width: 60%;
+  max-width: 16rem;
+  border-radius: 50%;
+  border: 0.3rem solid #ff7a18;
+}
+
+/* ---------- About ---------- */
+#about p {
+  max-width: 45rem;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+}
+
+/* ---------- Skills table ---------- */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.skills-table {
+  width: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 0.8rem;
+  border: 1px solid #bbbbbb;
+  text-align: left;
+}
+
+.skills-table th {
+  background-color: #1f2a44;
+  color: white;
+}
+
+.skills-table tr {
+  transition: background-color 0.3s;
+}
+
+.skills-table tbody tr:hover {
+  background-color: #ffe3cc;
+}
+
+/* ---------- Projects (Grid) ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;   /* mobile: one column */
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-top: 0.3rem solid #ff7a18;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.card a {
+  color: #ff7a18;
+  font-weight: 600;
+}
+
+/* ---------- Contact form ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+label {
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid gray;
+  border-radius: 0.3rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 8rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #ff7a18;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ---------- Buttons ---------- */
+button,
+.btn {
+  display: inline-block;
+  background-color: #ff7a18;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.7rem 1.5rem;
+  margin-top: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #1f2a44;
+  transform: scale(1.08);
+}
+
+/* ---------- Footer (Flexbox) ---------- */
+.foot {
+  background-color: #1f2a44;
+  color: white;
+  padding: 1.5rem 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.foot p {
+  margin-bottom: 0;
+}
+
+.foot-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.foot-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.foot-links a:hover {
+  color: #ff7a18;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes colorChange {
+  from { color: #ff7a18; }
+  to   { color: #2f6fed; }
+}
+
+/* ---------- Tablet (768px and up) ---------- */
+@media (min-width: 768px) {
+  .head {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #hero {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  #hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-img {
+    width: 30%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foot {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* ---------- Desktop (1024px and up) ---------- */
+@media (min-width: 1024px) {
+  section {
+    padding: 4rem 10%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
