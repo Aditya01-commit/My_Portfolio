@@ -1,7 +1,4 @@
 Responsive Portfolio Website
-Lab Title and Description
-
-Lab 3: Responsive Portfolio using Flexbox, Grid, Media Queries and Animations
 
 A one-page portfolio website for Aditya Chauhan. It has a Header, Hero, About, Skills, Projects, Contact and Footer section. It was built using HTML and CSS only.
 
